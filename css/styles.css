@@ -1,0 +1,249 @@
+/* Colors
+
+accent - #2196F3
+titlecolor - #212121
+textcolor - ##757575 
+primewhite - #FFFFFF 
+hoverbutton -  #188CE8 
+footertext - rgba(255, 255, 255, 0.6) 
+buttonbackground -  #F5F4FA
+mainbackground - #2F303A; */
+
+:root {
+  --accent-color: #2196f3;
+  --title-color: #212121;
+  --text-color: #757575;
+  --primewhite: #ffffff;
+  --hoverbutton: #188ce8;
+  --footertext: rgba(255, 255, 255, 0.6);
+  --buttonbackground: #f5f4fa;
+  --mainbackground: #2f303a;
+}
+
+/* Presettings for tegs */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.nav-list-item .current {
+  color: var(--accent-color);
+}
+
+.button-list .currentbutton {
+  color: var(--primewhite);
+  background-color: var(--accent-color);
+}
+
+/* header logo */
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+}
+
+.logo .web,
+.footer-logo .web {
+  color: var(--accent-color);
+}
+
+/* header navigation */
+.nav-list-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-link {
+  color: inherit;
+}
+.nav-link:hover {
+  color: var(--accent-color);
+}
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.nav-link:hover {
+  cursor: pointer;
+}
+
+/* header links */
+.connects a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.connects a:hover {
+  color: var(--accent-color);
+}
+.connects a:focus {
+  color: var(--accent-color);
+}
+
+/* Hero section */
+
+.hero-section {
+  background-color: var(--mainbackground);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primewhite);
+}
+
+.hero-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primewhite);
+  background-color: var(--accent-color);
+}
+
+.hero-button:hover {
+  background-color: var(--hoverbutton);
+  cursor: pointer;
+}
+.hero-button:focus {
+  background-color: var(--hoverbutton);
+}
+
+/* Benefits section  */
+.benefits-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefits-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--text-color);
+}
+
+/* WeDo title and Team title  */
+
+.wedo-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Our Team section  */
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--title-color);
+}
+.specialty {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* footer  */
+
+footer {
+  background-color: var(--mainbackground);
+}
+
+address {
+  font-style: normal;
+}
+
+.locate {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primewhite);
+}
+.footer-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footertext);
+}
+
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primewhite);
+}
+
+/* PORTFOLIO.HTML  */
+
+/* Buttons section  */
+
+.button-list button {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--buttonbackground);
+  color: var(--title-color);
+}
+
+.button-list button:hover {
+  color: var(--primewhite);
+  background-color: var(--accent-color);
+}
+.button-list button:focus {
+  color: var(--primewhite);
+  background-color: var(--accent-color);
+}
+
+/* Projects section  */
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+
+.project-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--text-color);
+}
