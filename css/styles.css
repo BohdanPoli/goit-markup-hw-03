@@ -100,8 +100,6 @@ body {
   display: flex;
 }
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
@@ -137,6 +135,8 @@ body {
 }
 .nav-link {
   color: inherit;
+  padding: 32px 0;
+  display: block;
 }
 .nav-link:hover {
   color: var(--accent-color);
@@ -168,15 +168,11 @@ body {
 }
 /* Hero section */
 
-.hero {
-  padding: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .hero-section {
   background-color: var(--mainbackground);
+  display: flex;
+  align-items: center;
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -212,7 +208,7 @@ body {
 /* Benefits section  */
 
 .benefits-section {
-  padding: 95px 0;
+  padding: 94px 0;
 }
 .benefits-list {
   display: flex;
@@ -245,7 +241,7 @@ body {
 }
 
 .wedo-section {
-  padding-bottom: 95px;
+  padding-bottom: 94px;
 }
 .wedo-list {
   display: flex;
@@ -263,21 +259,22 @@ body {
 
 /* Our Team section  */
 
+.team-div {
+  padding: 30px;
+}
+
 .team-item:not(:first-child) {
   margin-left: 30px;
 }
 
 .team-section {
-  padding: 95px 0;
+  padding: 94px 0;
+  background: #f5f4fa;
 }
 .team-list {
   display: flex;
   justify-content: center;
   align-content: center;
-}
-
-.team-img {
-  margin-bottom: 30px;
 }
 
 .team-name {
@@ -352,6 +349,13 @@ address {
 .button-list-item:not(:first-child) {
   margin-left: 8px;
 }
+
+.button-list-item > button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  border: none;
+}
 .button-list {
   margin-bottom: 50px;
   display: flex;
@@ -380,7 +384,7 @@ address {
 /* Projects section  */
 
 .projects-section {
-  padding: 95px 0;
+  padding: 94px 0;
 }
 .project-title {
   font-weight: 700;
@@ -408,19 +412,9 @@ address {
 
 .project-item {
   width: 370px;
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: #eeeeee;
-
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #eeeeee;
-
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: #eeeeee;
 }
 
-.project-img {
-  margin-bottom: 20px;
+.project-div {
+  border: 1px solid #eeeeee;
+  padding: 24px 20px;
 }
