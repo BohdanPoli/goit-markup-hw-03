@@ -22,13 +22,33 @@ mainbackground - #2F303A; */
 
 /* Presettings for tegs */
 
+img {
+  display: block;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-ul {
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .visually-hidden {
@@ -66,6 +86,30 @@ body {
   background-color: var(--accent-color);
 }
 
+/* header */
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+}
+
+.connects-list {
+  display: flex;
+}
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+.header-connects {
+  margin-left: auto;
+}
+
 /* header logo */
 
 .logo {
@@ -73,6 +117,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: #000000;
+  margin-right: 93px;
 }
 
 .logo .web,
@@ -86,6 +131,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 .nav-link {
   color: inherit;
@@ -101,21 +149,31 @@ body {
 }
 
 /* header links */
-.connects a {
+.connects-list a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-.connects a:hover {
+.connects-list a:hover {
   color: var(--accent-color);
 }
-.connects a:focus {
+.connects-list a:focus {
   color: var(--accent-color);
 }
 
+.connects-item:not(:last-child) {
+  margin-right: 50px;
+}
 /* Hero section */
+
+.hero {
+  padding: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .hero-section {
   background-color: var(--mainbackground);
@@ -129,6 +187,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primewhite);
+
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -150,10 +210,25 @@ body {
 }
 
 /* Benefits section  */
+
+.benefits-section {
+  padding: 95px 0;
+}
+.benefits-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.benefits-item:not(:first-child) {
+  margin-left: 30px;
+}
+
 .benefits-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .benefits-text {
@@ -165,14 +240,45 @@ body {
 
 /* WeDo title and Team title  */
 
+.wedo-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.wedo-section {
+  padding-bottom: 95px;
+}
+.wedo-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .wedo-title,
 .team-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 /* Our Team section  */
+
+.team-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.team-section {
+  padding: 95px 0;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
 
 .team-name {
   font-weight: 500;
@@ -180,6 +286,7 @@ body {
   line-height: 1.18;
   text-align: center;
   color: var(--title-color);
+  margin-bottom: 10px;
 }
 .specialty {
   font-size: 16px;
@@ -190,6 +297,19 @@ body {
 }
 
 /* footer  */
+
+.footer > .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-list li {
+  display: flex;
+}
+
+.footer {
+  padding: 60px 0;
+}
 
 footer {
   background-color: var(--mainbackground);
@@ -204,6 +324,11 @@ address {
   font-size: 14px;
   line-height: 1.71;
   color: var(--primewhite);
+  margin-bottom: 9px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-link {
   font-weight: 400;
@@ -217,11 +342,21 @@ address {
   font-size: 26px;
   line-height: 1.19;
   color: var(--primewhite);
+  margin-bottom: 20px;
 }
 
 /* PORTFOLIO.HTML  */
 
 /* Buttons section  */
+
+.button-list-item:not(:first-child) {
+  margin-left: 8px;
+}
+.button-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
 
 .button-list button {
   font-family: Roboto, sans-serif;
@@ -243,12 +378,18 @@ address {
 }
 
 /* Projects section  */
+
+.projects-section {
+  padding: 95px 0;
+}
 .project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+  margin-bottom: 4px;
+  padding: 0 24px;
 }
 
 .project-type {
@@ -256,4 +397,30 @@ address {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color);
+  padding: 0 24px 20px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-item {
+  width: 370px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
+}
+
+.project-img {
+  margin-bottom: 20px;
 }
